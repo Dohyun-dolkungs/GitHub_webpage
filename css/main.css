@@ -69,3 +69,55 @@
 .input--text::-moz-input-placeholder {
     color: #cacaca;
 }
+
+
+/* HEADER */
+header {
+    border-bottom: 1px solid rgba(0,0,0,0.75);
+    box-shadow: 0 0 5px rgba(0,0,0,0.75);
+    background: #fff;
+}
+
+header .inner {
+    height: 78px;
+    max-width: 980px;
+    margin: 0 auto;
+    
+}
+
+header .menu-group {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    
+}
+
+header .logo{
+    margin-right: 10px;
+
+    
+}
+
+header .logo a {
+    width:32px;
+    height: 32px;
+    display: block;  
+    background: url("../img/logo.svg");
+    /* Making text invisible */
+    text-indent: -9999px;
+}
+
+header .logo a:hover {
+    background: url("../img/logo_on.svg");
+}
+
+header .main-menu {
+    display: flex;
+
+}
+
+header .main-menu li a {
+    display: block;
+    padding: 10px;
+    color: #3c4146;
+}
