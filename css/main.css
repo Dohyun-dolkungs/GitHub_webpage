@@ -6,6 +6,11 @@
     color: #333;
 }
 
+/* Get rid of underline */
+a {
+    text-decoration: none;
+}
+
 /* BTN */
 .btn {
 
@@ -22,6 +27,7 @@
     cursor: pointer;
     box-sizing: border-box;
     position: relative;
+    color: #333;
 }
 
 .btn:hover::before {
@@ -68,6 +74,22 @@
 
 .input--text::-moz-input-placeholder {
     color: #cacaca;
+}
+
+
+/* FLOAT CLEARFIX */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.float--left {
+    float: left;
+}
+
+.float--right {
+    float: right;
 }
 
 
@@ -120,4 +142,12 @@ header .main-menu li a {
     display: block;
     padding: 10px;
     color: #3c4146;
+}
+
+header .main-menu li a:hover {
+    color: #4078c0;
+}
+
+header .sign-group {
+    display: flex;
 }
