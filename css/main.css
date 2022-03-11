@@ -92,6 +92,38 @@ a {
     float: right;
 }
 
+/* SUMMARY */
+.summary {
+
+}
+
+.summary__title {
+    font-size: 38px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 1.25;
+    margin-bottom: 18px;
+}
+
+.summary__description{
+    font-size: 26px;
+    font-weight: 300;
+    color: #767676;
+    line-height: 1.5;
+}
+
+/* SECTION & INNER */
+.section {
+    /* For universal purpose */
+    position: relative;
+}
+
+.section .inner {
+    max-width: 980px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
 
 /* HEADER */
 header {
@@ -102,9 +134,6 @@ header {
 
 header .inner {
     height: 78px;
-    max-width: 980px;
-    margin: 0 auto;
-    
 }
 
 header .menu-group {
@@ -150,4 +179,83 @@ header .main-menu li a:hover {
 
 header .sign-group {
     display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+
+header .btn-group {
+    order: 2;
+    display: flex;
+}
+
+header .btn-group .sign-in {
+    margin-right: 4px;
+}
+#search-form {
+    order: 1;
+    margin-right: 12px;
+}
+
+#search {
+    width: 160px;
+    font-size: 14px;
+}
+
+#search +[type="submit"] {
+    display: none;
+}
+
+header .sub-menu {
+    display: flex;
+    margin-right: 10px; 
+}
+
+header .sub-menu li a {
+    padding: 8px;
+    display: block;
+    font-size: 13px;
+    color: #3c4146;
+}
+
+header .sub-menu li a:hover {
+    color: #4078c0
+}
+
+
+/* VISUAL */
+.section--visual {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: cover;
+}
+
+/* Making background image less bright */
+.section--visual::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.3);
+}
+
+.section--visual .inner {
+    padding: 160px 0;
+}
+
+.section--visual .summary__title {
+    color: #FFF;    
+    font-size: 54px;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.25),
+                 0 1px 25px rgba(0,0,0,0.75);    
+}
+
+.section--visual .summary__description {
+    color: #FFF;    
+    text-shadow: 0 1px 1px rgba(0,0,0,0.25),
+                 0 1px 25px rgba(0,0,0,0.75);    
+
 }
