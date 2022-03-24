@@ -230,6 +230,14 @@ header .sub-menu li a:hover {
 }
 
 #toggle-btn {
+    display: none;
+    background: url("../img/toggle-btn.svg");
+    width: 18px;
+    height: 24px;
+    position: absolute;
+    top: 16px;
+    right: 26px;
+    cursor: pointer;
     text-indent: -9999px;
 }
 
@@ -560,16 +568,12 @@ footer .logo:hover svg {
         display: none;
     }
 
-    #toggle-btn {
-        background: url("../img/toggle-btn.svg");
-        width: 18px;
-        height: 24px;
-        position: absolute;
-        top: 16px;
-        right: 26px;
-        cursor: pointer;
-        text-indent: -9999px;
+    header .toggle.on {
+        display: block;
     }
 
-    
+    #toggle-btn {
+        display: block;
+    }
+        
 }
